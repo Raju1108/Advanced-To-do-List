@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To Do Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Daily Planner</h1>
+        <p id="todayDate"></p>
+    </header>
+
+    <section class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter task">
+        <input type="date" id="taskDate">
+        <select id="taskHour">
+            <option value="">Select Hour</option>
+        </select>
+        <button onclick="addTask()">Add Task</button>
+    </section>
+    <div class="main-content">
+        <section class="calendar-section">
+            <h2>Calendar</h2>
+            <div id="calendar"></div>
+        </section>
+
+        <section class="timeline-section">
+            <h2>Hourly Schedule</h2>
+            <div id="timeline"></div>
+        </section>
+
+        <section class="task-list">
+            <h2>Tasks</h2>
+            <ul id="taskList"></ul>
+        </section>
+    </div>
+    <div style="display:none">
+        <img src="assets/calendar-icon.png" alt="calendar">
+        <img src="assets/delete.png" alt="delete">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
